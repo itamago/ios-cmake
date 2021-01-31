@@ -567,8 +567,8 @@ if(${CMAKE_VERSION} VERSION_LESS "3.11")
   endif()
 else()
   # Newer versions of CMake sets the version min flags correctly
-  set(CMAKE_OSX_DEPLOYMENT_TARGET ${DEPLOYMENT_TARGET} CACHE STRING
-      "Set CMake deployment target" ${FORCE_CACHE})
+  # set(CMAKE_OSX_DEPLOYMENT_TARGET ${DEPLOYMENT_TARGET} CACHE STRING
+  #     "Set CMake deployment target" ${FORCE_CACHE})
 endif()
 
 if(DEFINED APPLE_TARGET_TRIPLE_INT)
